@@ -19,7 +19,7 @@ export const groupCategory: { name: string; icon: ReactNode }[] = [
 
 export async function getCategory() {
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_URL_API}/products/categories`
+    `${process.env.NextPublicUrlApi}/products/categories`
   );
 
   if (!res.ok) throw Error("Could not get products");
