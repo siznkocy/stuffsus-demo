@@ -13,7 +13,7 @@ export async function getProducts(
   let skip: string = String((page - 1) * limit);
 
   const res = await fetch(
-    `${process.env.NEXT_PUBLIC_URL_API}/products${
+    `${process.env.NextPublicUrlApi}/products${
       query ? query : "?"
     }limit=${limit}&skip=${skip}&select=title,price,rating,images,reviews,category`,
     {}
